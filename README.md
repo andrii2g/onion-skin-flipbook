@@ -2,6 +2,14 @@
 
 Draw a six-frame pixel animation in a desktop editor built with Tkinter and Pillow. Each frame is a 32×32 bitmap.
 
+## Samples
+
+| Bouncing ball | Bounce with frame 4 left blank |
+| --- | --- |
+| <img src="examples/bouncing-ball.gif" width="144" height="144" alt="A black pixel ball bouncing on a white canvas"> | <img src="examples/blank-frame.gif" width="144" height="144" alt="The ball disappears for one frame at the bottom of the bounce"> |
+
+Both GIFs were exported at 32×32 and are shown enlarged.
+
 ## Run
 
 Use Python 3.10 or newer with Tkinter available. Install Pillow if needed, then launch the editor from the repository folder.
@@ -29,6 +37,8 @@ Draw a 5×5 ball in all six frames. Keep its center at `x = 16` and place it at 
 Press **Play** to see how the wider spacing near the bottom makes the ball move faster there.
 
 Then clear frame 4 while keeping the ball in frame 3. While editing frame 4, you should see a light-gray ball from frame 3. During preview and in the exported GIF, frame 4 should appear all white from 300 to 400 ms in each loop.
+
+![Frame 4 shows the gray guide in the editor and appears completely white in the exported GIF](examples/onion-skin-comparison.png)
 
 ## Tests
 
